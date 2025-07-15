@@ -713,10 +713,12 @@
 .footer-right-wrap {
   grid-column-gap: 30px;
   grid-row-gap: 30px;
-  flex-flow: column;
+  flex-flow: row;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: flex-end;
   min-height: 250px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
 }
 
@@ -728,10 +730,12 @@
 .footer-form-block {
   margin-top: 30px;
   margin-bottom: 0;
+  display: none;
 }
 
 .footer-form-wrap {
   width: 250px;
+  display: none;
   position: relative;
 }
 
@@ -1161,7 +1165,7 @@
 
 .image-4 {
   object-fit: cover;
-  width: 200px;
+  width: 130px;
   height: 100%;
 }
 
@@ -1544,7 +1548,7 @@
   }
 
   .image-4 {
-    width: 100%;
+    width: 130px;
     height: auto;
   }
 
@@ -1711,6 +1715,10 @@
     grid-column-gap: 40px;
     grid-row-gap: 40px;
   }
+
+  .image-4 {
+    width: 120px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -1731,7 +1739,8 @@
   }
 
   .primary-button {
-    padding: 10px 24px;
+    padding: 8px 20px;
+    font-size: 16px;
   }
 
   .primary-button.button-full {
@@ -1795,6 +1804,10 @@
   .about-counter-shape.right {
     top: -.5px;
     right: -48px;
+  }
+
+  .button-black {
+    font-size: 16px;
   }
 
   .heading {
@@ -2034,6 +2047,10 @@
   .heading-4 {
     font-size: 22px;
     line-height: 1.3;
+  }
+
+  .image-4 {
+    width: 110px;
   }
 }
 
